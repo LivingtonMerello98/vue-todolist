@@ -35,45 +35,17 @@
                             <!-- new task -->
                             <h2><span class="triangle-icon">&blacktriangledown;</span>New Task</h2>
                             <ul>
-                                <li><span class="checked">&#x2713;</span>Quarterly Newsletter <button class="cta-list editorial">Editorial</button></li>
-                            </ul>
-                        </div>
-                        <div class="list">
-                            <!-- today -->
-                            <h2><span class="triangle-icon">&blacktriangledown;</span>Today</h2>
-                            <ul>
-                                <li>
-                                    <span class="checked">&#x2713;</span>Recruiting blog post <button class="cta-list editorial">Editorial</button>
-                                </li>
-                                <li>
-                                    <span class="checked">&#x2713;</span>Mobile app launch <button class="cta-list q1_goals">Q1 Goals</button>
-                                </li>
-                                <li>
-                                    <span class="un-checked">&#x2717;</span>Interview Jhon H. <button class="cta-list recruiting">Recruiting</button>
-                                </li>
-                                <li>
-                                    <span class="checked">&#x2713;</span>Summit update to mobile storefronts <button class="cta-list mobile">Mobile</button>
+                                <!-- lista su cui iterare -->
+                                <li class="style" v-for="(task, index) in taskList" :key="index">
+                                    <div>
+                                        <input type="checkbox" :id="'to-do-'+ index" v-model="task.selected" class="checkbox">
+                                        <label :for="'to-do-'+ index">{{task['to-do']}}</label>
+                                        <button style="margin-left: 1rem;" @click="removeTask(index)">delete</button>
+                                    </div>
                                 </li>
                             </ul>
                         </div>
-                        <div class="list">
-                            <!-- upcoming -->
-                            <h2><span class="triangle-icon">&blacktriangledown;</span>Upcoming</h2>
-                            <ul>
-                                <li>
-                                    <span class="un-checked">&#x2717;</span>Schedule meeting with Alex 
-                                </li>
-                                <li>
-                                    <span class="checked">&#x2713;</span>Homepage refresh <button class="cta-list website">Website</button>
-                                </li>
-                                <li>
-                                    <span class="checked">&#x2713;</span>Onboard new Sales team members <button class="cta-list sales">Sales</button>
-                                </li>
-                                <li>
-                                    <span class="checked">&#x2713;</span>Review editorial calendar <button class="cta-list editorial">Editorial</button>
-                                </li>
-                            </ul>
-                        </div>
+                    
                     </div>
                 </div>
             </div>
