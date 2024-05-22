@@ -1,0 +1,156 @@
+*{
+    padding: 0;
+    margin: 0;
+    border-sizing:border-box;
+}
+
+body{
+    /* background-color:black; */
+    background-color:rgb(246,248,249);
+    font-family: "Roboto", sans-serif;
+    font-size:16px;
+}
+
+.container{
+    width: 80%;
+    margin:0 auto;
+}
+
+/* header */
+.header-container{
+    background-color: white;
+}
+
+.logo{
+    width: 80px;
+    vertical-align: middle;
+}
+
+.logo-text{
+    font-size: 40px;
+    font-weight: bold; 
+    vertical-align: middle;
+    color: rgb(67,71,80);
+}
+
+.vertical-spacing{
+    line-height:3; 
+}
+
+/* content */
+.content{
+    margin:50px 0px;
+    background-color:white;
+    border-radius:10px;
+}
+
+/* button */
+.button-container{
+    padding:2% 5%;
+}
+
+.button{
+    font-family: "Roboto", sans-serif;
+    padding: 0.5rem 1rem;
+    border-radius:5px;
+}
+
+.button-container .add-task{
+    background-color:rgb(71,173,241);/*blue */
+    border: 0px;
+    color: white;
+}
+
+.button-container .add-section{
+    background-color:rgb(255,255,255);
+    border: 1px solid rgb(208,213,217); /*grey */
+    color: rgb(208,213,217);
+}
+
+/* horizontal rule */
+#hr{
+    border: none;
+    border-top: 5px solid rgb(246,248,249) ;
+}
+
+.list-container{
+    padding:2% 5%;
+}
+
+.list-container .list{
+    margin: 3% 0%;
+}
+/* ul styling */
+ul{
+    list-style-type: none;
+}
+
+h2{
+    color: rgb(67,71,80);
+}
+
+h2 .triangle-icon{
+    font-size:40px;
+    vertical-align: middle;
+    color: rgb(67,71,80);
+}
+
+li{
+    font-size:16px;
+    color: rgb(67,71,80);
+    vertical-align: middle;
+    line-height: 3;
+}
+
+/* entity code formatting */
+.checked{
+    font-size:14px;
+    color: rgb(118,200,181);
+    border: 2px solid rgb(118,200,181);
+    border-radius: 100%;
+    padding: 1px 5px;
+    vertical-align: middle;
+    margin-right:0.5rem;
+    margin-left:0.5rem;
+}
+.un-checked{
+    font-size:14px;
+    color: rgb(237,103,98);
+    border: 2px solid rgb(237,103,98);
+    border-radius: 100%;
+    padding: 1px 5px;
+    vertical-align: middle;
+    margin-right:0.5rem;
+    margin-left:0.5rem;
+}
+
+/* cta-list */
+.cta-list{
+    font-size:10px;
+    padding: 0.4rem 0.7rem;
+    vertical-align:middle;
+    border: 0px solid;
+    border-radius: 0.6rem;
+    color: white;
+    margin-left: 0.2rem;
+    vertical-align:middle;
+}
+/* cta-color */
+.editorial{
+    background-color: #45ABEA;
+}
+.q1_goals{
+    background-color: #9C72E4;
+}
+.recruiting{
+    background-color: #64C0A9;
+}
+.mobile{
+    background-color: #F29E33;
+}
+.website{
+    background-color: #D863A1;
+}
+.sales{
+    background-color: #B0C926;
+}
