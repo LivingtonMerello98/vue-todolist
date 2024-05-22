@@ -103,6 +103,9 @@ li{
     margin: 1rem;
 }
 
+.strikethrough {
+    text-decoration: line-through;
+}
 
 .style{
     border-radius: 0.2rem;

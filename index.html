@@ -39,7 +39,7 @@
                                 <li class="style" v-for="(task, index) in taskList" :key="index">
                                     <div>
                                         <input type="checkbox" :id="'to-do-'+ index" v-model="task.selected" class="checkbox">
-                                        <label :for="'to-do-'+ index">{{task['to-do']}}</label>
+                                        <label :for="'to-do-'+ index" :class="{ 'strikethrough': task.selected }" style="font-weight: 600;">{{task['to-do']}}</label>
                                         <button style="margin-left: 1rem;" @click="removeTask(index)">delete</button>
                                     </div>
                                 </li>
