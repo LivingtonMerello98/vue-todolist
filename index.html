@@ -25,8 +25,8 @@
             <div class="container">
                 <div class="content"> 
                     <div class="button-container" >
-                        <input type="text" class="input" v-model="newTask" placeholder="inserisci una nuova task">
-                        <button class="button add-task m-left" @click="addTask()">Add Task</button>
+                        <input type="text" class="input" v-model="newTask" placeholder="inserisci una nuova task" @keyup.enter="addTask()">
+                        <button class="button add-task m-left" @click="addTask()" >Add Task</button>
                     </div>
                     <hr id="hr">
                     <!-- list-container -->
@@ -40,8 +40,10 @@
                                     <li class="style-list" v-for="(task, index) in taskList" :key="index">
                                         <div>
                                             <input type="checkbox" :id="'to-do-'+ index" v-model="task.selected" class="checkbox">
+
                                             <label :for="'to-do-'+ index" :class="{ 'strikethrough': task.selected }" style="font-weight: 600;">{{task['to-do']}}</label>
-                                            <button style="margin-left: 1rem;" @click="removeTask(index)">delete</button>
+                                            
+                                            <span class="un-checked" @click="removeTask(index)">&#10005;</span>
                                         </div>
                                     </li>
                                 </ul>
@@ -51,11 +53,6 @@
                     </div>
                 </div>
             </div>
-            <!-- <div class="container" style="margin-top: 30px; background-color: black;">
-                <div class="content" style="background-color: black;">
-                    <input type="text">
-                </div>
-            </div> -->
         </main>
     </div>
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>

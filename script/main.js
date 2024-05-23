@@ -8,25 +8,25 @@ createApp({
         return {
             taskList: [
                 {
-                    'to-do': 'portare fuori la spazzatura',
+                    'to-do': 'Preparare il report settimanale',
                     selected: false,
                 },
                 {
-                    'to-do': 'stendere i panni',
+                    'to-do': 'Partecipare alla riunione di progetto',
                     selected: false,
                 },
                 {
-                    'to-do': 'lavare i piatti',
+                    'to-do': 'Rispondere alle email dei clienti',
                     selected: false,
                 },
                 {
-                    'to-do': 'chiamare i genitori',
+                    'to-do': 'Aggiornare il sistema di gestione',
                     selected: false,
                 },
                 {
-                    'to-do': 'prenotare vacanze',
+                    'to-do': 'Analizzare i dati delle vendite',
                     selected: false,
-                },
+                }
             ]
         }
     },
