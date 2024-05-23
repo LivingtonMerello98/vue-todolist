@@ -33,6 +33,16 @@ createApp({
     methods: {
         removeTask(index) {
             this.taskList.splice(index,1);
-        }
+        },
+         addTask(){
+             console.log('btn pressed');
+             
+             if (this.newTask.trim() !== '') { 
+                this.taskList.push({ 'to-do': this.newTask }); 
+                this.newTask = ''; 
+            }
+
+             this.taskList.push()
+         }
     }
 }).mount('#app');
